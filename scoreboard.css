@@ -1,1 +1,30 @@
-/* Your CSS definitions here */
+td{
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    font-size: 12pt;
+    color:white;
+}
+
+th{
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+}
+
+#field{
+    font-size: 28pt;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+#runs{
+    color: white;
+}
+
+#table{
+    height: fit-content;
+    width: fit-content;
+    background-color:rgb(50, 100, 85);
+}
