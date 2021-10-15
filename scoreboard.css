@@ -1,30 +1,42 @@
-td{
+#scoreCell{
     border-style: solid;
     border-color: black;
-    border-width: thick;
     font-size: 12pt;
-    color:white;
 }
 
-th{
+#runTotal{
+    border-style: solid;
+    border-color: white;
     font-size: 12pt;
-    font-weight: bold;
+}
+
+#header{
     color: white;
+    font-weight: bold;
 }
 
-#field{
+#parkName{
     font-size: 28pt;
     color: white;
     font-family: Arial;
     text-align: center;
 }
 
-#runs{
-    color: white;
+#table{
+    background-color:rgb(50, 100, 85);
 }
 
-#table{
-    height: fit-content;
-    width: fit-content;
-    background-color:rgb(50, 100, 85);
+#controlCenter{
+    font-weight: bold;
+    color: white;
+    border-width: thick;
+    background-color: black;
+    border-radius: 10px;
+    border-style: outset;
+    padding: 20px;
+}
+
+#buttons{
+    font-size: 12pt;
+    font-family: courier;
 }

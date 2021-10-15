@@ -5,7 +5,61 @@
     <link rel="stylesheet" href="scoreboard.css" />
   </head>
   <body>
-    <div style="width:max-content">
+    <table id="table">
+      <thead>
+        <tr>
+          <th id="parkName">
+            Aidan Field
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <table id="header">
+              <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th id="runs">R</th>
+              </tr>
+              <tr>
+                <th id="header">Away</th>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="runTotal">0</td>
+              </tr>
+              <tr>
+                <th id="header">Home</th>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="scoreCell">0</td>
+                <td id="runTotal">0</td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <img src="images/ups.png" style="height: 120px; float: right;">
+          </td>
+        </tr>
+      </tbody>
+      
+    </table>
+    <!-- <div style="width:max-content;">
       <div id="table" style="float: right;">
         <h1 id="field">Aidan Field</h1>
         <table style = "width: max-content">
@@ -29,7 +83,7 @@
             <td>test1</td>
             <td>test1</td>
             <td>test1</td>
-            <td>test1</td>
+            <td id="runs">test1</td>
           </tr>
           <tr id = "score" name = "home">
             <th>Home</th>
@@ -40,14 +94,56 @@
             <td>test2</td>
             <td>test2</td>
             <td>test2</td>
-            <td>test2</td>
+            <td id="runs">test2</td>
           </tr>
-          <img src="images/ups.png" style="height: 120px;float: right;">
+          <img src="images/ups.png" style="height: 120px; float: right;">
         </table>
       </div>
-      
-    </div>
+    </div> -->
     <script src="app.js"></script>
   </body>
+
+  <div>
+    <div id="controlCenter" style="width: min-content; height: min-content;">
+      <h1>Control Center</h1>
+      <table>
+        <tr>
+          <th>Who:</th>
+          <td>
+            <select name="Who" id="who">
+              <option value="Away">Away</option>
+              <option value="Home">Home</option>
+            </select>
+          </td>
+          
+          <th>Inning:</th>
+          <td>
+            <select name="Who" id="who">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Runs:</th>
+          <td id="buttons">
+            <button type="addbutton">+</button>
+            <button type="losebutton">-</button>
+        </tr>
+        <tr>
+          <th>Sound:</th>
+          <td>
+            <button type="losebutton">🎶</button>
+            <button type="losebutton">🎹</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
   
 </html>
