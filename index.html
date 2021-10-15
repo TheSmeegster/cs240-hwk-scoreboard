@@ -8,7 +8,7 @@
     <table id="table">
       <thead>
         <tr>
-          <th id="parkName">
+          <th id="title">
             Aidan Field
           </th>
         </tr>
@@ -57,93 +57,67 @@
           </td>
         </tr>
       </tbody>
-      
     </table>
-    <!-- <div style="width:max-content;">
-      <div id="table" style="float: right;">
-        <h1 id="field">Aidan Field</h1>
-        <table style = "width: max-content">
-          <tr>
-            <th></th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th id = "runs">R</th>
-          </tr>
-          <tr id = "score" name = "away">
-            <th>Away</th>
-            <td>test1</td>
-            <td>test1</td>
-            <td>test1</td>
-            <td>test1</td>
-            <td>test1</td>
-            <td>test1</td>
-            <td>test1</td>
-            <td id="runs">test1</td>
-          </tr>
-          <tr id = "score" name = "home">
-            <th>Home</th>
-            <td>test2</td>
-            <td>test2</td>
-            <td>test2</td>
-            <td>test2</td>
-            <td>test2</td>
-            <td>test2</td>
-            <td>test2</td>
-            <td id="runs">test2</td>
-          </tr>
-          <img src="images/ups.png" style="height: 120px; float: right;">
-        </table>
-      </div>
-    </div> -->
     <script src="app.js"></script>
-  </body>
 
-  <div>
-    <div id="controlCenter" style="width: min-content; height: min-content;">
-      <h1>Control Center</h1>
-      <table>
+    <br>
+    <br>
+    
+    <table id="controlCenter">
+      <thead>
         <tr>
-          <th>Who:</th>
+          <th id="title">
+            Control Center
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
           <td>
-            <select name="Who" id="who">
-              <option value="Away">Away</option>
-              <option value="Home">Home</option>
-            </select>
-          </td>
-          
-          <th>Inning:</th>
-          <td>
-            <select name="Who" id="who">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-            </select>
+            <table>
+              <tr>
+                <th id="header">Who:</th>
+                <td>
+                  <select name="Who" id="who">
+                    <option value="Away">Away</option>
+                    <option value="Home">Home</option>
+                  </select>
+                  <tc>
+                    <th id="header">Inning:</th>
+                      <td>
+                        <select name="Who" id="who">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                        </select> 
+                      </td>
+                  </tc>
+                </td>
+              </tr>
+              
+              <tr>
+                <th id="header">Runs:</th>
+                  <td>
+                    <button type="addbutton" id="buttons">+</button>
+                    <button type="losebutton" id="buttons">-</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <th id="header">Sound:</th>
+                  <td>
+                    <button type="music" onclick=playMusic()>🎶</button>
+                    <button type="piano" onclick=playPiano()>🎹</button>
+                  </td>
+              </tr>
+            </table>
           </td>
         </tr>
-        <tr>
-          <th>Runs:</th>
-          <td id="buttons">
-            <button type="addbutton">+</button>
-            <button type="losebutton">-</button>
-        </tr>
-        <tr>
-          <th>Sound:</th>
-          <td>
-            <button type="losebutton">🎶</button>
-            <button type="losebutton">🎹</button>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  
+      </tbody>
+    </table>
+  </body>
 </html>

@@ -12,10 +12,10 @@
 
 #header{
     color: white;
-    font-weight: bold;
+    font-weight:bold;
 }
 
-#parkName{
+#title{
     font-size: 28pt;
     color: white;
     font-family: Arial;
