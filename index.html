@@ -78,15 +78,15 @@
               <tr>
                 <th id="header">Who:</th>
                 <td>
-                  <select name="Who" id="who">
+                  <select name="Who" id="who" onclick=switchTeams(value)>
                     <option value="Away">Away</option>
                     <option value="Home">Home</option>
                   </select>
                   <tc>
                     <th id="header">Inning:</th>
                       <td>
-                        <select name="Who" id="who">
-                          <option value="1">1</option>
+                        <select onclick=newInning(value)>
+                          <option value="1" selected>1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
@@ -102,8 +102,8 @@
               <tr>
                 <th id="header">Runs:</th>
                   <td>
-                    <button type="addbutton" id="buttons">+</button>
-                    <button type="losebutton" id="buttons">-</button>
+                    <button type="addbutton" id="buttons" onclick=addRun()>+</button>
+                    <button type="losebutton" id="buttons" onclick=removeRun()>-</button>
                   </td>
               </tr>
 
