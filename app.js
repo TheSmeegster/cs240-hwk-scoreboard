@@ -8,6 +8,7 @@ let awayRunsTable = document.getElementsByClassName("Away");
 let homeRunsTable = document.getElementsByClassName("Home");
 let imageSlot = document.querySelector("img");
 
+//Plays a random song and displays a random image
 function playMusic(){
     let songNum = Math.random();
     let music;
@@ -30,6 +31,7 @@ function playMusic(){
     music.play();
 }
 
+//Plays the chicken dance and switches the image to the chicken dancing
 function playPiano(){
     console.log("piano");
     let piano = new Audio('sounds/chickendance.mp3')
@@ -37,6 +39,7 @@ function playPiano(){
     imageSlot.src = "images/sdchicken.jpg"
 }
 
+//Adds a run to the selected team at the selected inning
 function addRun(){
     if(currentTeam == "Away"){
         awayRuns[currentInning]++;
@@ -52,6 +55,7 @@ function addRun(){
     updateTotal();
 }
 
+//Removes a run from the selected team at the selected inning
 function removeRun(){
     if(currentTeam == "Away"){
         awayRuns[currentInning]--;
@@ -67,26 +71,20 @@ function removeRun(){
     updateTotal();
 }
 
+//Switches the current inning
 function newInning(inning){
     currentInning = inning - 1;
 }
 
+//Switches selected team
 function switchTeams(team){
     currentTeam = team;
 }
 
+//Updates total runs for each team
 function updateTotal(){
     let homeTotalTable = document.getElementsByName("HomeTotal");
     homeTotalTable[0].innerHTML = homeTotal;
     let awayTotalTable = document.getElementsByName("AwayTotal");
     awayTotalTable[0].innerHTML = awayTotal;
-}
-
-function changeImage(buttonPressed){
-    if(buttonPressed == "chickenDance"){
-
-    } else {
-        let imageNum = Math.random() * 3;
-
-    }
 }
