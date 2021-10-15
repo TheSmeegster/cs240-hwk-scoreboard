@@ -21,23 +21,27 @@ let currentInning = 1;
 let currentTeam = "Away";
 let awayRuns = [0, 0, 0, 0, 0, 0, 0];
 let homeRuns = [0, 0, 0, 0, 0, 0, 0];
+let awayTotal = 0;
+let homeTotal = 0;
 
 function addRun(){
     if(currentTeam == "Away"){
         awayRuns[currentInning]++;
+        awayTotal++;
     } else {
         homeRuns[currentInning]++;
+        homeTotal++;
     }
-    console.log(awayRuns[currentInning] + " " + homeRuns[currentInning]);
 }
 
 function removeRun(){
     if(currentTeam == "Away"){
         awayRuns[currentInning]--;
+        awayTotal--;
     } else {
         homeRuns[currentInning]--;
+        homeTotal--;
     }
-    console.log(awayRuns[currentInning] + " " + homeRuns[currentInning]);
 }
 
 function newInning(inning){
